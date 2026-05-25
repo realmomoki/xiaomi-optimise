@@ -1,0 +1,26 @@
+{
+    "description": "Known bloatware packages on Xiaomi/MIUI/HyperOS devices",
+    "last_updated": "2026-05-25",
+    "packages": [
+        "com.miui.analytics",
+        "com.miui.msa.global",
+        "com.miui.daemon",
+        "com.miui.cleanmaster",
+        "com.miui.securitycenter",
+        "com.miui.gallery",
+        "com.miui.weather2",
+        "com.miui.notes",
+        "com.miui.compass",
+        "com.xiaomi.joyose",
+        "com.xiaomi.midrop",
+        "com.xiaomi.payment",
+        "com.miui.phrase",
+        "com.miui.player",
+        "com.miui.videoplayer",
+        "com.miui.fm",
+        "com.miui.calculator",
+        "com.miui.screenrecorder",
+        "com.miui.huanji",
+        "com.milink.service"
+    ]
+}
