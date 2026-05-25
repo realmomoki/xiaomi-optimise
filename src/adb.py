@@ -51,9 +51,9 @@ class ADBManager:
             "model": self.run_command("getprop ro.product.model") or "Unknown",
             "codename": self.run_command("getprop ro.product.device") or "unknown",
             "os_version": f"MIUI {self.run_command('getprop ro.miui.ui.version.name') or '?'} (Android {self.run_command('getprop ro.build.version.release') or '?'})",
-            "battery": int(self.run_command("dumpsys battery | grep level | awk '{print $3}'") or "0"),
-            "ram_used": self.run_command("free -m | grep Mem | awk '{print $3"MB"}'") or "?",
-            "ram_total": self.run_command("free -m | grep Mem | awk '{print $2"MB"}'") or "?",
+"battery": int(self.run_command("dumpsys battery | grep level | awk '{print $3}'") or "0"),
+            "ram_used": self.run_command("free -m | grep Mem | awk '{print $3}'") or "?",
+            "ram_total": self.run_command("free -m | grep Mem | awk '{print $2}'") or "?",
         }
 
     def push_file(self, local_path: str, remote_path: str) -> bool:
